@@ -10,9 +10,7 @@ function App() {
   return (
     <div className="App">
       <UserWithStatus name='Nikita'/>
-      <User />
       <UserWithStatusToo />
-      <User name="Stas"/>
     </div>
   );
 }
