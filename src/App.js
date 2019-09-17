@@ -1,24 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
+import {User} from "./Components/User";
+import {withStatusComponent} from "./Components/hoc/withStatusComponent";
 import './App.css';
+
+const UserWithStatus = withStatusComponent(User);
+const UserWithStatusToo = withStatusComponent(User);
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <UserWithStatus name='Nikita'/>
+      <UserWithStatusToo />
     </div>
   );
 }
